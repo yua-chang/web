@@ -7,29 +7,31 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 import Header from "./header"
 import "../styles/global.css"
 
 const Layout = ({ children, title }) => [
 
-    <>
+  <>
     <div className="siteContainer">
       <Helmet>
         <title>{title}</title>
       </Helmet>
       <div className='siteContent'>
-      <Header />
+        <Header/>
         <main className="main">{children}</main>
-        </div> {/* end of .siteContent */}
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-        </div> {/* end of .siteContainer */}
-    </>
+      </div>
+      {/* end of .siteContent */}
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </footer>
+    </div>
+    {/* end of .siteContainer */}
+  </>
 
 ]
 
