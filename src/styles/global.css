@@ -267,7 +267,7 @@ h1 {
 h2 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 3.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -280,11 +280,16 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  border-bottom: solid 1px lightgray;
 }
+h2:nth-of-type(1) {
+  margin-top: 0;
+}
+
 h3 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 2.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -499,7 +504,7 @@ hr {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: calc(1.45rem - 1px);
+  margin-bottom: 2px;
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
   height: 1px;
@@ -527,7 +532,7 @@ th {
   font-weight: bold;
 }
 li {
-  margin-bottom: calc(1.45rem / 2);
+  margin-bottom: calc(.8rem / 2);
 }
 ol li {
   padding-left: 0;
@@ -537,13 +542,13 @@ ul li {
 }
 li > ol {
   margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
+  margin-bottom: calc(.8rem / 2);
+  margin-top: calc(.8rem / 2);
 }
 li > ul {
   margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
+  margin-bottom: calc(.8rem / 2);
+  margin-top: calc(.8rem / 2);
 }
 
 blockquote *:last-child {
@@ -556,7 +561,7 @@ p *:last-child {
   margin-bottom: 0;
 }
 li > p {
-  margin-bottom: calc(1.45rem / 2);
+  margin-bottom: calc(.8rem / 2);
 }
 code {
   font-size: 0.85rem;
@@ -607,48 +612,50 @@ th:last-child,
 td:last-child {
   padding-right: 0;
 }
-tt,
-pre {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 0.85rem;
-  line-height: 1.42;
-  background: #001628;
-  border-radius: 5px;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1.45rem;
+
+/**
+ * `👈で囲まれた領域(<code>)の Style👉`
+ */
+:not(pre) > code[class*="language-"] {
+  font-size: .8em;
+  padding: .1em .5em;
+  border-radius: .3em;
+  white-space: normal;
 }
 
-code {
-  background-color: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
-    'Liberation Mono', Menlo, Courier, monospace;
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+/**
+ * ```
+ * 👆👇で囲まれた領域(<code>)の Style
+ * ```
+ */
+.gatsby-highlight pre[class*="language-"] {
+  padding: 1.3em .8em;
+  margin: .5em 0 2em 0;
+  overflow: auto;
+  border-radius: 0.3em;
 }
-pre code {
-  background: none;
-  line-height: 1.42;
+
+.gatsby-highlight code[class*="language-"] {
+  font-size: .8em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+.gatsby-highlight::before {
+  content: attr(data-language);
+  position: absolute;
   color: white;
+  font-size: .7em;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  background: royalblue;
+  line-height: initial;
+  width: 48px;
+  padding: 2px 4px;
+  text-align: center;
+  border-radius: 0 0 4px 0;
 }
-code:before,
-code:after,
-tt:before,
-tt:after {
-  letter-spacing: -0.2em;
-  content: ' ';
-}
-pre code:before,
-pre code:after,
-pre tt:before,
-pre tt:after {
-  content: '';
-}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
