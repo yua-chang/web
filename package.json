@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-mdx-website-blog",
+  "name": "KaniDo-Luck!",
   "private": true,
-  "description": "A starter website and blog powered by Gatsby and Markdown with MDX",
+  "description": "カニ",
   "version": "0.1.0",
-  "author": "Doak Heggeness <doakheggeness@gmail.com>",
+  "author": "@hasegayo",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -57,9 +57,7 @@
     "dev": "gatsby develop --host 0.0.0.0",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.mdx'",
     "build": "gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
