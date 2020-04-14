@@ -20,6 +20,7 @@ const Wrap = styled('div')`
       position: fixed;
       margin-right: 2em;
       top: 32px;
+      left: 32px;
       font-size: 2.4em;
       line-height: initial;
     }
@@ -46,7 +47,7 @@ class Top extends React.Component {
     return (
       <Wrap>
         <Layout location={this.props.location} title={siteTitle}>
-          <SEO title="Top" keywords={[`blog`, `カニ`, `javascript`]} />
+          <SEO title="Top" keywords={[`blog`, `カニ`, `javascript`, `hasegayo`]} />
         </Layout>
       </Wrap>
     )
