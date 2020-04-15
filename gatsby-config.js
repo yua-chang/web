@@ -51,7 +51,6 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
           },
-
           {
             resolve: `gatsby-remark-smartypants`,
           },
@@ -60,7 +59,7 @@ module.exports = {
             options: {
               classPrefix: "language-",
               inlineCodeMarker: null,
-              aliases: {},
+              aliases: { sh: "bash" },
               showLineNumbers: false,
               noInlineHighlight: false,
             },

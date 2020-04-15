@@ -603,7 +603,7 @@ td:last-child {
 }
 
 /**
- * `👈で囲まれた領域(<code>)の Style👉`
+ * ``で囲まれた領域(<code>)の Style
  */
 :not(pre) > code[class*="language-"] {
   font-size: .8em;
@@ -614,10 +614,11 @@ td:last-child {
 
 /**
  * ```
- * 👆👇で囲まれた領域(<code>)の Style
+ * で囲まれた領域(<code>)の Style
  * ```
  */
 .gatsby-highlight pre[class*="language-"] {
+  position: relative;
   padding: 1.3em .8em;
   margin: .5em 0 2em 0;
   overflow: auto;
@@ -643,6 +644,21 @@ td:last-child {
   padding: 2px 4px;
   text-align: center;
   border-radius: 0 0 4px 0;
+  z-index: 10;
+}
+
+.copy {
+  height: 32px;
+  padding: 4px;
+  position: absolute;
+  right: 4px;
+  top: 0;
+  cursor: pointer;
+  transition: all 200ms ease
+}
+.copy:hover {
+  transform: translate(0, -10%);
+  color: rgba(230, 230, 230, 0.95)
 }
 
 @media only screen and (max-width: 480px) {

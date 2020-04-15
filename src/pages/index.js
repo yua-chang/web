@@ -47,7 +47,10 @@ class Top extends React.Component {
     return (
       <Wrap>
         <Layout location={this.props.location} title={siteTitle}>
-          <SEO title="Top" keywords={[`blog`, `カニ`, `javascript`, `hasegayo`]} />
+          <SEO
+            title="Top"
+            keywords={[`blog`, `カニ`, `javascript`, `hasegayo`]}
+          />
         </Layout>
       </Wrap>
     )
