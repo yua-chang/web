@@ -4,6 +4,7 @@ module.exports = {
     author: `@hasegayo`,
     description: `カニ`,
     siteUrl: `https://kanido-luck.netlify.com/`,
+    siteVerification: `MjAO2j0O_vYjp1LKevG2ziGXPWxyo0iQmxaHjvdvUic`,
     social: {
       twitter: `yua_chang`,
     },
