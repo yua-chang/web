@@ -3,7 +3,7 @@ module.exports = {
     title: `KaniDo-Luck!`,
     author: `@hasegayo`,
     description: `カニ`,
-    siteUrl: `https://kanido-luck.netlify.com/`,
+    siteUrl: `https://kanido-luck.netlify.app/`,
     siteVerification: `MjAO2j0O_vYjp1LKevG2ziGXPWxyo0iQmxaHjvdvUic`,
     social: {
       twitter: `yua_chang`,
