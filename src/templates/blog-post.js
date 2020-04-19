@@ -4,6 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Tags from '../components/tags'
 
 import '../styles/global.css'
 
@@ -17,15 +18,16 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1>{post.frontmatter.title}</h1>
-        <p
+        <span
           style={{
-            display: `block`,
-            marginBottom: '0.5rem',
-            marginTop: '0.5rem',
+            float: `left`,
+            marginBottom: `0.5rem`,
+            marginLeft: `2px`,
           }}
         >
           {post.frontmatter.date}
-        </p>
+        </span>
+        <Tags tags={post.frontmatter.tags} />
         <MDXRenderer>{post.body}</MDXRenderer>
         {/*<hr*/}
         {/*  style={{*/}
@@ -78,6 +80,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
       body
     }
