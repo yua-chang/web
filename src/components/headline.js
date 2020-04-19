@@ -49,7 +49,7 @@ const Headline = ({ title, node }) => [
         </span>
         <Tags tags={node.frontmatter.tags} />
       </small>
-      <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+      {/*<p dangerouslySetInnerHTML={{ __html: node.excerpt }} />*/}
     </Article>
   </>,
 ]
