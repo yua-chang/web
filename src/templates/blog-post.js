@@ -29,12 +29,6 @@ class BlogPostTemplate extends React.Component {
         </span>
         <Tags tags={post.frontmatter.tags} />
         <MDXRenderer>{post.body}</MDXRenderer>
-        {/*<hr*/}
-        {/*  style={{*/}
-        {/*    marginBottom: '0.5rem',*/}
-        {/*  }}*/}
-        {/*/>*/}
-
         <ul
           style={{
             display: `flex`,

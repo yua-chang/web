@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../../components/layout'
-import FlexTags from '../../components/flex-tags'
-import SEO from '../../components/seo'
+import Layout from '../components/layout'
+import FlexTags from '../components/flex-tags'
+import SEO from '../components/seo'
 
 class TagsIndex extends React.Component {
   render() {
@@ -28,7 +28,6 @@ class TagsIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All tags"/>
-        <span>{discription}</span>
         <FlexTags tagSummary={tagSummary} discription={discription}/>
       </Layout>
     )

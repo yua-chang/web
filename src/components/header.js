@@ -74,6 +74,11 @@ const Header1 = () => {
               Blog
             </Link>
           </li>
+          <li>
+            <Link to="/tags/" activeStyle={activeLinkStyle}>
+              Tags
+            </Link>
+          </li>
         </ul>
       </Nav>
     </Header>
