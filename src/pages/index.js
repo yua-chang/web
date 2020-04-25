@@ -49,7 +49,7 @@ class Top extends React.Component {
         <Layout location={this.props.location} title={siteTitle}>
           <SEO
             title="Top"
-            keywords={[`blog`, `カニ`, `javascript`, `hasegayo`]}
+            keywords={[`blog`, `カニ`, `javascript`, `yua-chang`]}
           />
         </Layout>
       </Wrap>

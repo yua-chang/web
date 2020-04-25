@@ -3,7 +3,7 @@
   "private": true,
   "description": "カニ",
   "version": "0.1.0",
-  "author": "@hasegayo",
+  "author": "@yua-chang",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",

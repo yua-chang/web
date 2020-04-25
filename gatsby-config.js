@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `KaniDo-Luck!`,
-    author: `@hasegayo`,
+    author: `@yua-chang`,
     description: `カニ`,
     siteUrl: `https://kanido-luck.netlify.app/`,
     siteVerification: `MjAO2j0O_vYjp1LKevG2ziGXPWxyo0iQmxaHjvdvUic`,

@@ -28,7 +28,7 @@ const Footer1 = () => {
       <p>
         <a
           className="social-icon"
-          href="https://github.com/hasegayo/web"
+          href="https://github.com/yua-chang/web"
           target="_blank"
           rel="noopener"
         >
@@ -69,7 +69,7 @@ const Footer1 = () => {
           </svg>
         </a>
       </p>
-      Copyright © {new Date().getFullYear()} @hasegayo
+      Copyright © {new Date().getFullYear()} @yua-chang
     </Footer>
   )
 }
